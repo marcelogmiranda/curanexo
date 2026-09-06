@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CuraNexo: Flutter Pub Get",
+      "type": "shell",
+      "command": "flutter pub get",
+      "problemMatcher": []
+    },
+    {
+      "label": "CuraNexo: Flutter Analyze",
+      "type": "shell",
+      "command": "flutter analyze",
+      "problemMatcher": ["$dart-analyze"]
+    },
+    {
+      "label": "CuraNexo: Flutter Test",
+      "type": "shell",
+      "command": "flutter test",
+      "problemMatcher": []
+    },
+    {
+      "label": "CuraNexo: Flutter Test + Analyze",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "CuraNexo: Flutter Analyze",
+        "CuraNexo: Flutter Test"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
