@@ -1,0 +1,22 @@
+# Requisitos Funcionais
+
+- RF01 — autenticar usuários.
+- RF02 — manter clientes e dependentes.
+- RF03 — manter contratos.
+- RF04 — manter planos e coberturas.
+- RF05 — manter regras de elegibilidade.
+- RF06 — registrar solicitações.
+- RF07 — avaliar elegibilidade.
+- RF08 — gerar autorizações.
+- RF09 — integrar prestadores por API abstrata.
+- RF10 — registrar execução.
+- RF11 — registrar pagamentos.
+- RF12 — controlar recorrência.
+- RF13 — controlar inadimplência.
+- RF14 — registrar vendas avulsas.
+- RF15 — manter contas a receber.
+- RF16 — manter contas a pagar.
+- RF17 — manter centros de resultado.
+- RF18 — apresentar dashboards.
+- RF19 — operar contingência.
+- RF20 — manter trilha de auditoria.
