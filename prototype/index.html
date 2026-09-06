@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CuraNexo | Protótipo OWNER</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="prototype-shell">
+      <aside class="rail">
+        <div class="brand">
+          <span class="brand-mark">+</span>
+          <div>
+            <strong>CuraNexo</strong>
+            <small>Protótipo v0.1.0</small>
+          </div>
+        </div>
+
+        <div class="switcher" aria-label="Selecionar experiência">
+          <button class="active" data-mode="client">Cliente</button>
+          <button data-mode="office">Backoffice</button>
+        </div>
+
+        <nav class="side-nav" id="sideNav" aria-label="Navegação do protótipo"></nav>
+
+        <div class="notice">
+          <strong>Ambiente mockado</strong>
+          <span>Sem Supabase, Stripe ou APIs reais. Fluxos para validação com OWNER.</span>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <section class="topbar">
+          <div>
+            <p class="eyebrow">Healthtech por recorrência</p>
+            <h1 id="pageTitle">Jornada do cliente</h1>
+          </div>
+          <div class="top-actions">
+            <button class="ghost" id="toggleScenario">Cenário: normal</button>
+            <button class="primary" id="primaryAction">Nova solicitação</button>
+          </div>
+        </section>
+
+        <section id="clientApp" class="client-stage">
+          <div class="phone">
+            <div class="phone-top">
+              <span>09:41</span>
+              <span>CN</span>
+            </div>
+            <div class="phone-screen" id="phoneScreen"></div>
+            <div class="mobile-tabs" id="mobileTabs"></div>
+          </div>
+
+          <div class="context-panel">
+            <div class="hero-visual" aria-hidden="true">
+              <div class="pulse-card">
+                <span class="pulse-icon">+</span>
+                <strong>Elegibilidade em tempo real</strong>
+                <small>mock operacional</small>
+              </div>
+              <div class="route-line"></div>
+              <div class="provider-pin">Rede CE</div>
+            </div>
+
+            <div class="panel-block">
+              <p class="eyebrow">Fluxos P0</p>
+              <h2>Cliente entende plano, solicita atendimento e recebe autorização.</h2>
+              <p>O protótipo valida cobertura, compra avulsa, pagamento mock, código de autorização, rede de prestadores, histórico e cobrança.</p>
+            </div>
+
+            <div class="timeline" id="journeyTimeline"></div>
+          </div>
+        </section>
+
+        <section id="officeApp" class="office-stage hidden">
+          <div class="office-grid">
+            <section class="executive-band" id="officeSummary"></section>
+            <section class="office-main" id="officeMain"></section>
+            <aside class="office-aside" id="officeAside"></aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
