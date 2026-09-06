@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CuraNexo (Flutter)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "CuraNexo (Flutter Profile)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    }
+  ]
+}
